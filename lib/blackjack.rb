@@ -24,7 +24,7 @@ def get_user_input
   input 
 end
 
-def end_game
+def end_game(num)
   # code #end_game here
 end
 
