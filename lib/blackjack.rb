@@ -62,5 +62,12 @@ end
 
 def runner
   # code runner here
+  welcome 
+  points = initial_round
+  until points > 21 
+    points = hit?(points)
+    display_card_total(points)
+  end 
+  end_game(points)
 end
     
