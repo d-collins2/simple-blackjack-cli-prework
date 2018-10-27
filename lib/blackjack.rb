@@ -42,16 +42,16 @@ def hit?(num)
   # code hit? here
   prompt_user
   answer = get_user_input
-  if invalid_command
+  if invalid_command(answer)
     hit?(num)
   else 
     answer == "s" ? num : deal_card + num 
   end 
 end
 
-def invalid_command
+def invalid_command(input)
   # code invalid_command here
-  unless get_user_input == "h" || get_user_input == "s"
+  unless input == "h" || input == "s"
     puts "Please enter a valid command"
   end
 end
