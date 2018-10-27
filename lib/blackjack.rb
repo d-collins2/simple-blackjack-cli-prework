@@ -48,8 +48,9 @@ end
 def invalid_command
   # code invalid_command here
   unless get_user_input == "h" || get_user_input == "s"
-    puts 
+    puts "Please enter a valid command"
   end
+  prompt_user
 end
 
 #####################################################
